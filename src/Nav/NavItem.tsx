@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import './NavItem.css';
 interface Props {
-  linkTo: string;
+  linkTo?: string;
   children: JSX.Element;
 }
 export const NavItem: FC<Props> = ({ linkTo, children: text }) => {
