@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC } from 'react';
+import { NavBar } from './Nav/NavBar';
+import { HomePage } from './Home/Home';
+import { NavItem } from './Nav/NavItem';
+import { Header } from './Common/Typography';
 
-const App: React.FC = () => {
+export const App: FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <NavBar>
+        <NavItem linkTo={'https://github.com/chheller'}>
+          <Header size={18} color="white">
+            Github
+          </Header>
+        </NavItem>
+        <NavItem
+          linkTo={
+            'https://www.linkedin.com/in/charles-heller-055677113?trk=people-guest_profile-result-card_result-card_full-click'
+          }
         >
-          Learn React
-        </a>
-      </header>
+          <Header size={18} color="white">
+            LinkedIn
+          </Header>
+        </NavItem>
+      </NavBar>
+      <HomePage></HomePage>
     </div>
   );
-}
-
-export default App;
+};

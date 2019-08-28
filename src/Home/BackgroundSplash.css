@@ -1,0 +1,47 @@
+.credits {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 4px;
+  margin-bottom: 6px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Helvetica,
+    Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.svgWrapper {
+  display: inline-block;
+  padding: 2px 3px;
+}
+
+svg {
+  height: 12px;
+  width: auto;
+  position: relative;
+  vertical-align: middle;
+  top: -2px;
+  fill: white;
+}
+
+.creditName {
+  display: inline-block;
+  padding: 2px 3px;
+}
+.background {
+  z-index: -1000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: url('./unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
