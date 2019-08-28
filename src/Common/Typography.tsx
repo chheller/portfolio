@@ -29,6 +29,7 @@ export const Text: FC<TextProps> = props => {
     textAlign: center ? 'center' : 'left',
     textTransform: caps ? 'uppercase' : 'none',
     margin: 0,
+    caretColor: 'transparent',
     color
   };
   return (
