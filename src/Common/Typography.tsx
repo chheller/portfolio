@@ -1,5 +1,4 @@
 import React, { FC, CSSProperties, ReactText } from 'react';
-import { StandardLonghandProperties } from 'csstype';
 
 interface TextProps {
   alt?: boolean;
