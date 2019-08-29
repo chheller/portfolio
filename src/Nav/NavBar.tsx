@@ -72,7 +72,7 @@ const ProjectsDropdown: FC<{ isOpen: boolean }> = ({ isOpen }) => {
       title={
         <Header size={18} color="white">
           <FontAwesomeIcon
-            icon={["fas", "project-diagram"]}
+            icon={["fas", "cogs"]}
             color="white"
             size="lg"
             title="Projects"
@@ -85,8 +85,8 @@ const ProjectsDropdown: FC<{ isOpen: boolean }> = ({ isOpen }) => {
         <Link href={"https://github.com/chheller/portfolio"}>
           <Text color="white" size={18}>This Site</Text>
         </Link>
-
       </DropdownItem>
+
       <DropdownItem>
         <Link href={"http://tesseract.uark.edu/blog/portfolio-items/never-give-up-grit-your-teeth-and-face-the-gods/"}>
           <Text color="white" size={18}>Game Design Final Project</Text>
