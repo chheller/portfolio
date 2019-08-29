@@ -1,15 +1,9 @@
-import React, { FC } from 'react';
-import './NavItem.css';
+import React, { FC } from "react";
+import styles from "./NavBar.module.css";
 interface Props {
-  linkTo?: string;
-  children: JSX.Element;
+  children?: JSX.Element[] | JSX.Element | string;
+  className?: string;
 }
-export const NavItem: FC<Props> = ({ linkTo, children: text }) => {
-  return (
-    <li>
-      <a href={linkTo} target="_blank">
-        {text}
-      </a>
-    </li>
-  );
+export const NavItem: FC<Props> = ({ children, className = "" }) => {
+  return <li className={`${styles.navItem} ${className}`}>{children}</li>;
 };

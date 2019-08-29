@@ -1,0 +1,36 @@
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fancyHr {
+  overflow: visible; /* For IE */
+  height: 15px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+.fancyHr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.description {
+  width: 600px;
+}
+
+.description *:not(:first-child):not(:last-child):after {
+  white-space: pre;
+  content: "\A \00a7";
+}
