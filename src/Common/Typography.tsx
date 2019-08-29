@@ -27,7 +27,7 @@ export const Text: FC<TextProps> = props => {
     size = 16,
     tag: Tag = "span",
     textOverflow = "none",
-    textDecoration = "none currentcolor solid",
+    textDecoration = "none",
     lineClamp = 0,
     display,
     whiteSpace = '',
